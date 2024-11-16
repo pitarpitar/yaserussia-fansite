@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Сайт фанатов Yaserussia, ссылки на моды, соцсети и заявка в Popcorn Studio | Program Studio.">
+    <meta name="keywords" content="Yaserussia, моды, Popcorn Studio, Program Studio, фанаты">
+    <meta name="author" content="Yaserussia">
+    <title>Сайт фанатов Yaserussia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #444;
+            padding: 0.5em;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1em;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 2em;
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 2em;
+        }
+        section h2 {
+            color: #333;
+            border-bottom: 2px solid #f90;
+            padding-bottom: 0.5em;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+        .form-group {
+            margin-bottom: 1em;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #f90;
+            color: #fff;
+            border: none;
+            padding: 0.7em 1.5em;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #e68a00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Фанаты Yaserussia</h1>
+        <p>Добро пожаловать на официальный фанатский сайт!</p>
+    </header>
+    <nav>
+        <a href="#about">Обо мне</a>
+        <a href="#mods">Моды</a>
+        <a href="#socials">Соцсети</a>
+        <a href="#team">Подать заявку</a>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>Кто я такой?</h2>
+            <p>Меня зовут Yaserussia, я создаю моды, игры и обучаюсь программированию. На этом сайте вы найдете всю информацию обо мне, ссылки на мои работы и сможете присоединиться к моей студии Popcorn Studio | Program Studio!</p>
+        </section>
+        <section id="mods">
+            <h2>Мои моды</h2>
+            <ul>
+                <li><a href="https://ru.gta5-mods.com/maps/realistic-situation-mod-menyoo" target="_blank">Мод 1</a></li>
+                <li><a href="https://ru.gta5-mods.com/maps/michael-criminal-house-menyoo" target="_blank">Мод 2</a></li>
+                <li><a href="https://ru.gta5-mods.com/maps/special-mission-222" target="_blank">Мод 3</a></li>
+            </ul>
+        </section>
+        <section id="socials">
+            <h2>Мои соцсети</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/@Yaserussia" target="_blank">YouTube</a></li>
+                <li><a href="https://vk.com/yaserussia" target="_blank">ВКонтакте</a></li>
+                <li><a href="discord yaserussia" target="_blank">Discord</a></li>
+            </ul>
+        </section>
+        <section id="team">
+            <h2>Подать заявку</h2>
+            <form onsubmit="sendApplication(event)">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Почему хотите присоединиться?</label>
+                    <textarea id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Yaserussia. Все права защищены.</p>
+    </footer>
+    <script>
+        function sendApplication(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const message = document.getElementById('message').value;
+
+            alert(`Спасибо за заявку, ${name}! Мы свяжемся с вами.`);
+            console.log(`Заявка от ${name}: ${message}`);
+        }
+    </script>
+</body>
+</html>
